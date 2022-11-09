@@ -1,4 +1,4 @@
-import { useFormattedCurrencyCode } from 'src/i18n/hooks/useFormattedMoney';
+import { useFormattedCurrencyCode } from 'src/i18n/hooks/useFormattedCurrencyCode';
 import { memo } from 'react';
 import { NumberFormatOptionsCurrencyDisplay } from '@formatjs/ecma402-abstract/types/number';
 

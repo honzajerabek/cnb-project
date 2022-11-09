@@ -16,7 +16,7 @@ import { ItemSeparator } from 'src/components/ItemSeparator';
 import { Color } from 'src/layout/colors';
 import { Header } from 'src/screens/exchangeRateTableScreen/components/Header';
 import { useAnimatedHeader } from 'src/screens/exchangeRateTableScreen/hooks/useAnimatedHeader';
-import { useExchangeRatesList } from 'src/hooks/queries/useExchangeRatesList';
+import { useExchangeRatesList } from 'src/hooks/useExchangeRatesList';
 import { FormattedMessage } from 'react-intl';
 import { CenterLoader } from 'src/components/CenterLoader';
 

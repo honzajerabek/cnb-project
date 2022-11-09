@@ -3,7 +3,7 @@ import { RouteProp } from '@react-navigation/native';
 export type RouteParamsList = {
   ExchangeRateTableScreen: undefined;
   ConverterScreen: { currency: string } | undefined;
-  CurrencyPickerScreen: { currency: string } | undefined;
+  CurrencyPickerScreen: undefined;
 };
 
 export type RouteKeys = keyof RouteParamsList;
