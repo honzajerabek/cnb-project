@@ -1,4 +1,6 @@
 {
   "button.converter": "Převodník měn",
-  "header.valid-for": "Platné pro {updatedAt}"
+  "header.valid-for": "Platné pro {updatedAt}",
+  "error.fetching": "Nepodařilo se načíst měnový kurz. Zkuste prosím znovu později.",
+  "retry": "Opakovat"
 }

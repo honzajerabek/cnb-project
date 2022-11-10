@@ -19,9 +19,10 @@ import { useAnimatedHeader } from 'src/screens/exchangeRateTableScreen/hooks/use
 import { useExchangeRatesList } from 'src/hooks/useExchangeRatesList';
 import { FormattedMessage } from 'react-intl';
 import { CenterLoader } from 'src/components/CenterLoader';
+import { FetchingError } from 'src/screens/exchangeRateTableScreen/components/FetchingError';
 
 export const ExchangeRateTableScreen = () => {
-  const { data, refetch, isLoading } = useExchangeRatesQuery();
+  const { data, refetch, isLoading, error } = useExchangeRatesQuery();
 
   const { bottom: bottomInset } = useSafeAreaInsets();
 
@@ -45,6 +46,10 @@ export const ExchangeRateTableScreen = () => {
 
   if (!data?.rates && isLoading) {
     return <CenterLoader />;
+  }
+
+  if (error) {
+    return <FetchingError onRetryPress={refetch} />;
   }
 
   return (

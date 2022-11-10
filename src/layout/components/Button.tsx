@@ -17,6 +17,7 @@ export const Button = ({ onPress, children }: Props) => {
 
 const styles = StyleSheet.create({
   button: {
+    width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
